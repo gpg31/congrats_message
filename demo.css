@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    border: 5px dashed #ff4500;
+    padding: 20px;
+    background: radial-gradient(circle, #fff 50%, #ffeb3b 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.circus-elements {
+    position: relative;
+    margin: 20px 0;
+}
+
+.balloon {
+    font-size: 3em;
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+}
+
+#balloon1 {
+    left: 20%;
+    animation-delay: 0s;
+}
+
+#balloon2 {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+#balloon3 {
+    left: 80%;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.banner {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    margin: 10px 0;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.button {
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ffa500;
+}
